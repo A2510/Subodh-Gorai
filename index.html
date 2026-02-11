@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Advocate Subodh Gorai - Professional Legal Services">
+    <meta name="keywords" content="advocate, lawyer, legal services, Subodh Gorai">
+    <title>Advocate Subodh Gorai - Legal Services</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        /* Custom animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        .animate-fadeInUp {
+            animation: fadeInUp 1s ease-out forwards;
+        }
+        
+        .animate-fadeIn {
+            animation: fadeIn 1.2s ease-out forwards;
+        }
+        
+        .animate-scaleIn {
+            animation: scaleIn 0.8s ease-out forwards;
+        }
+        
+        .delay-200 {
+            animation-delay: 0.2s;
+        }
+        
+        .delay-400 {
+            animation-delay: 0.4s;
+        }
+        
+        .delay-600 {
+            animation-delay: 0.6s;
+        }
+        
+        .delay-800 {
+            animation-delay: 0.8s;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #4b5563 0%, #6b7280 50%, #9ca3af 100%);
+        }
+        
+        .card-shadow {
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .hover-lift {
+            transition: all 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Initially hidden for animation */
+        .fade-on-load {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    
+    <!-- Hero Section -->
+    <section class="gradient-bg min-h-screen flex items-center justify-center relative overflow-hidden">
+        <!-- Decorative Elements -->
+        <div class="absolute top-0 left-0 w-full h-full opacity-20">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-amber-400 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 right-10 w-96 h-96 bg-amber-500 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 py-20 relative z-10">
+            <div class="text-center">
+                <!-- Profile Image -->
+                <div class="mb-8 fade-on-load animate-scaleIn">
+                    <img src="photo.jpg" alt="Advocate Subodh Gorai" 
+                         class="w-48 h-48 md:w-56 md:h-56 rounded-full mx-auto object-cover border-8 border-white shadow-2xl">
+                </div>
+                
+                <!-- Name and Title -->
+                <div class="fade-on-load animate-fadeInUp delay-200">
+                    <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">
+                        Advocate Subodh Gorai
+                    </h1>
+                    <div class="flex items-center justify-center gap-3 mb-6">
+                        <i class="fas fa-balance-scale text-amber-400 text-2xl"></i>
+                        <p class="text-xl md:text-2xl text-blue-100 font-light">Legal Advocate</p>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="inline-block bg-white/20 backdrop-blur-sm px-6 py-3 rounded-full">
+                            <p class="text-white font-medium">
+                                <i class="fas fa-certificate text-amber-400 mr-2"></i>
+                                Bar Council Registration: <span class="font-semibold">MP/302/2006</span>
+                            </p>
+                        </div>
+                        <div class="inline-block bg-white/20 backdrop-blur-sm px-6 py-3 rounded-full">
+                            <p class="text-white font-medium">
+                                <i class="fas fa-landmark text-amber-400 mr-2"></i>
+                                <span class="font-semibold">District Court Chhindwara</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quick Contact Buttons -->
+                <div class="mt-12 flex flex-wrap justify-center gap-4 fade-on-load animate-fadeInUp delay-400">
+                    <a href="https://wa.me/919425872031" target="_blank"
+                       class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+                    </a>
+                    <a href="tel:9425872031"
+                       class="bg-white hover:bg-gray-100 text-blue-900 px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <i class="fas fa-phone mr-2"></i>Call Now
+                    </a>
+                    <a href="#contact"
+                       class="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <i class="fas fa-envelope mr-2"></i>Get in Touch
+                    </a>
+                </div>
+                
+                <!-- Scroll Indicator -->
+                <div class="mt-16 fade-on-load animate-fadeIn delay-600">
+                    <a href="#about" class="inline-block animate-bounce">
+                        <i class="fas fa-chevron-down text-white text-3xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                        Professional Profile
+                    </h2>
+                    <div class="w-24 h-1 bg-blue-900 mx-auto rounded-full"></div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Main Info Card -->
+                    <div class="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl card-shadow hover-lift">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-gavel text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-3">Advocate Subodh Gorai</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                Dedicated legal professional committed to providing exceptional advocacy and legal counsel.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Registration Card -->
+                    <div class="bg-gradient-to-br from-amber-50 to-white p-8 rounded-2xl card-shadow hover-lift">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 p-2">
+                                <img src="logo.png" alt="Logo" class="w-full h-full object-contain">
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-3">Bar Council Registration</h3>
+                            <p class="text-3xl font-bold text-amber-600 mb-2">MP/302/2006</p>
+                            <p class="text-gray-600 text-sm">Registered Legal Practitioner</p>
+                            <div class="mt-4 pt-4 border-t border-gray-200">
+                                <p class="text-gray-700 font-semibold">
+                                    <i class="fas fa-landmark text-blue-900 mr-2"></i>
+                                    District Court Chhindwara
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional Info -->
+                <div class="mt-12 text-center bg-gray-50 p-8 rounded-2xl">
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        <i class="fas fa-quote-left text-blue-900 mr-2"></i>
+                        Providing comprehensive legal services with integrity, professionalism, and dedication to justice.
+                        <i class="fas fa-quote-right text-blue-900 ml-2"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                        Get in Touch
+                    </h2>
+                    <p class="text-gray-600 text-lg">Reach out for legal consultation and assistance</p>
+                    <div class="w-24 h-1 bg-blue-900 mx-auto mt-4 rounded-full"></div>
+                </div>
+                
+                <!-- Contact Methods -->
+                <div class="grid md:grid-cols-3 gap-8 mb-16">
+                    <!-- WhatsApp Card -->
+                    <div class="bg-white p-8 rounded-2xl card-shadow hover-lift text-center">
+                        <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fab fa-whatsapp text-green-500 text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">WhatsApp</h3>
+                        <p class="text-gray-600 mb-4">Chat with us instantly</p>
+                        <a href="https://wa.me/919425872031" target="_blank"
+                           class="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105">
+                            9425872031
+                        </a>
+                    </div>
+                    
+                    <!-- Phone Card -->
+                    <div class="bg-white p-8 rounded-2xl card-shadow hover-lift text-center">
+                        <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-phone text-blue-900 text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Phone</h3>
+                        <p class="text-gray-600 mb-4">Call us directly</p>
+                        <a href="tel:9425872031"
+                           class="inline-block bg-blue-900 hover:bg-blue-800 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105">
+                            9425872031
+                        </a>
+                    </div>
+                    
+                    <!-- Email Card -->
+                    <div class="bg-white p-8 rounded-2xl card-shadow hover-lift text-center">
+                        <div class="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-envelope text-amber-500 text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Email</h3>
+                        <p class="text-gray-600 mb-4">Send us a message</p>
+                        <a href="mailto:advocate@example.com"
+                           class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105">
+                            advocate@example.com
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="bg-white p-8 md:p-12 rounded-2xl card-shadow">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Send a Message</h3>
+                    <form id="contactForm" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-semibold mb-2">
+                                    <i class="fas fa-user mr-2 text-blue-900"></i>Full Name
+                                </label>
+                                <input type="text" id="name" name="name" required
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900 transition-all duration-300"
+                                       placeholder="Enter your name">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-semibold mb-2">
+                                    <i class="fas fa-envelope mr-2 text-blue-900"></i>Email Address
+                                </label>
+                                <input type="email" id="email" name="email" required
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900 transition-all duration-300"
+                                       placeholder="Enter your email">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-gray-700 font-semibold mb-2">
+                                <i class="fas fa-phone mr-2 text-blue-900"></i>Phone Number
+                            </label>
+                            <input type="tel" id="phone" name="phone"
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900 transition-all duration-300"
+                                   placeholder="Enter your phone number">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 font-semibold mb-2">
+                                <i class="fas fa-comment mr-2 text-blue-900"></i>Message
+                            </label>
+                            <textarea id="message" name="message" rows="5" required
+                                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900 transition-all duration-300"
+                                      placeholder="How can we help you?"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit"
+                                    class="bg-blue-900 hover:bg-blue-800 text-white px-12 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                                <i class="fas fa-paper-plane mr-2"></i>Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Location Section -->
+    <section id="location" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                        Visit Our Office
+                    </h2>
+                    <p class="text-gray-600 text-lg">We're here to assist you with your legal matters</p>
+                    <div class="w-24 h-1 bg-blue-900 mx-auto mt-4 rounded-full"></div>
+                </div>
+                
+                <!-- Location Info -->
+                <div class="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl card-shadow mb-8 text-center">
+                    <div class="flex items-center justify-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center">
+                            <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800">Office Location</h3>
+                    </div>
+                    <p class="text-gray-700 text-lg">
+                        Schedule an appointment for personalized legal consultation
+                    </p>
+                </div>
+                
+                <!-- Map -->
+                <div class="rounded-2xl overflow-hidden card-shadow">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3697.8700824047596!2d78.9648607!3d22.0545647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd5662827e980cf%3A0x15936de5d2b622af!2sADVOCATE%20SUBODH%20GORAI!5e0!3m2!1sen!2sin!4v1770815703472!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="w-full">
+                    </iframe>
+                </div>
+                
+                <!-- Action Buttons -->
+                <div class="mt-8 text-center">
+                    <a href="https://www.google.com/maps/place/ADVOCATE+SUBODH+GORAI/@22.0545647,78.9648607" 
+                       target="_blank"
+                       class="inline-block bg-blue-900 hover:bg-blue-800 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <i class="fas fa-directions mr-2"></i>Get Directions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-3 gap-8 mb-8">
+                    <!-- About -->
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <img src="logo.png" alt="Logo" class="w-12 h-12 bg-white rounded-full p-1">
+                            <h4 class="text-2xl font-bold">Advocate Subodh Gorai</h4>
+                        </div>
+                        <p class="text-blue-100 mb-4">
+                            Professional legal services with dedication to justice and client satisfaction.
+                        </p>
+                        <div class="flex gap-4">
+                            <a href="https://wa.me/919425872031" target="_blank"
+                               class="w-10 h-10 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="tel:9425872031"
+                               class="w-10 h-10 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110">
+                                <i class="fas fa-phone"></i>
+                            </a>
+                            <a href="mailto:advocate@example.com"
+                               class="w-10 h-10 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Links -->
+                    <div>
+                        <h4 class="text-xl font-bold mb-4">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="#about" class="text-blue-100 hover:text-white transition-colors duration-300">
+                                    <i class="fas fa-chevron-right mr-2 text-sm"></i>About
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="text-blue-100 hover:text-white transition-colors duration-300">
+                                    <i class="fas fa-chevron-right mr-2 text-sm"></i>Contact
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#location" class="text-blue-100 hover:text-white transition-colors duration-300">
+                                    <i class="fas fa-chevron-right mr-2 text-sm"></i>Location
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div>
+                        <h4 class="text-xl font-bold mb-4">Contact Information</h4>
+                        <ul class="space-y-3 text-blue-100">
+                            <li>
+                                <i class="fas fa-phone mr-2"></i>
+                                <a href="tel:9425872031" class="hover:text-white transition-colors duration-300">
+                                    9425872031
+                                </a>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope mr-2"></i>
+                                <a href="mailto:advocate@example.com" class="hover:text-white transition-colors duration-300">
+                                    advocate@example.com
+                                </a>
+                            </li>
+                            <li>
+                                <i class="fas fa-landmark mr-2"></i>
+                                <span>District Court Chhindwara</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt mr-2"></i>
+                                <span>Ward Number 21, Road No. 8, Janta Colony, Chhindwara, Madhya Pradesh 480001</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Copyright -->
+                <div class="border-t border-white/20 pt-8 text-center">
+                    <p class="text-blue-100">
+                        &copy; 2026 Advocate Subodh Gorai. All rights reserved.
+                    </p>
+                    <p class="text-blue-200 text-sm mt-2">
+                        Professional Legal Services
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scroll to Top Button -->
+    <button id="scrollTop" 
+            class="fixed bottom-8 right-8 bg-blue-900 hover:bg-blue-800 text-white w-12 h-12 rounded-full shadow-lg opacity-0 pointer-events-none transition-all duration-300 z-50">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- JavaScript -->
+    <script>
+        // Form submission handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+            
+            // In a real application, you would send this data to a server
+            alert(`Thank you for your message, ${name}! We will get back to you soon.\n\nNote: To enable form submission, please integrate with a backend service or email API.`);
+            
+            // Reset form
+            this.reset();
+        });
+        
+        // Scroll to top button
+        const scrollTopBtn = document.getElementById('scrollTop');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                scrollTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+                scrollTopBtn.classList.add('opacity-100');
+            } else {
+                scrollTopBtn.classList.add('opacity-0', 'pointer-events-none');
+                scrollTopBtn.classList.remove('opacity-100');
+            }
+        });
+        
+        scrollTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fadeInUp');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
