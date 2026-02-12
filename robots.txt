@@ -1,0 +1,22 @@
+# robots.txt for Advocate Subodh Gorai Website
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://subodh-gorai.vercel.app/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10
+
+# Specific bot rules
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Yahoo! Slurp
+Allow: /
